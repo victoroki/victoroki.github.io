@@ -3,6 +3,7 @@
 body {
     background-color: #080808;
     color: #fff;
+    margin: 0;
 }
 
 .nav {
@@ -54,24 +55,56 @@ h1 {
 
 .my-picture {
     width: auto;
-    height: 329px;
-    border-radius: 50%;
-    rotate: 310deg;
-    border: 2px solid rgb(82, 76, 76);
-    box-shadow: -3px 2px 0px 20px #141313;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 0px;
-    left: 680px;
+  }
+
+.specialized{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.first-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.second-text{
+    margin-top: -10px;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 30px 60px;
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9px 20px 100px 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 39px;
+    border: 0.77px solid white;
 }
 
 .get-in-touch {
+    background-color:rgb(27, 27, 29);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 150px;
+    margin: 0;
+
 }
 
 .get-in-touch p {
@@ -108,9 +141,10 @@ h1 {
 
 .about-me p {
     font-family: 'Mirza', cursive;
-    font-size: 28px;
+    font-size: 24px;
     margin-top: -14px;
-    text-align: center;
+    margin: -70px 0px 0px -60px;
+    width: 67%;
 }
 .project-title{
     display: flex;
@@ -119,7 +153,7 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.project-head{
+/*.project-head{
     display: flex;
     flex-direction: column;
     background-color: rgb(48, 48, 51);
@@ -129,7 +163,7 @@ h1 {
     margin: auto;
     
 }
-h3{
+*/h3{
     font-family: 'Mirza', cursive;
     font-size: 28px;
     font-weight: bold;
@@ -151,6 +185,12 @@ h4 {
     font-family: 'Mirza', cursive;
     font-size: 28px;
     font-weight: bold;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-react {
@@ -285,12 +325,13 @@ h5 {
     text-decoration: none;
 }
 
-hr {
+/*hr {
     width: 100%;
     overflow: visible;
     display: inline-flex;
+    margin: 0;
 }
-
+*/
 .last-hr {
     content: "";
     display: block;
@@ -308,7 +349,7 @@ hr {
 .footer-list a {
     text-decoration: none;
     color: aliceblue;
-    text-transform: capitalize;
+    text-transform: lowercase;
     font-size: 18px;
     margin-left: 11px;
 }
