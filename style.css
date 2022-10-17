@@ -329,12 +329,3 @@ h5 {
 .link-more {
     text-decoration: none;
 }
-@media (min-width: 576px){
-    h1{
-        font-size: 15px;
-    }
-    .my-picture{
-        width:30%;
-        height:30%;
-    }
-}
