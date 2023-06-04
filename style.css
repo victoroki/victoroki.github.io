@@ -16,7 +16,10 @@ body {
 .nav p {
     text-transform: uppercase;
     font-size: 20px;
-
+    cursor: pointer;
+}
+.nav p :hover{
+    color: darkorange;
 }
 
 .nav ul {
@@ -30,10 +33,11 @@ body {
 
 }
 
-.active,
 .nav ul li :hover {
-    color: rgb(114, 192, 83);
+    color: rgb(243, 245, 242);
     border-radius: 8px;
+    padding: 11px;
+    background-color: darkorange;
 }
 
 .nav ul li a {
@@ -47,20 +51,34 @@ h1 {
     font-family: 'Mirza', cursive;
     font-weight: bold;
     font-size: 50px;
-    letter-spacing: -1.5px;
-    width: 30%;
-    height: 3%;
+    /* letter-spacing: -1.5px;
+    width: 40%; */
     padding: 44px 0px 0px 44px;
+}
+h1 span{
+    display: block;
 }
 .contact-me{
     display: flex;
+    cursor: pointer;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     height:59px;
     width: 169px;
     background-color: blue;
     border-radius: 20px;
-    margin: -30px 0px 0px 44px;
+    margin: -44px 0px 0px 44px;
+}
+.contact-me :hover{
+    display: flex;
+    font-weight: bold;
+    background-color: rgb(224, 30, 199);
+    height:59px;
+    width: 169px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center; 
 }
 
 .my-picture {
@@ -71,6 +89,12 @@ h1 {
 .spacer{
     padding:70px;
 }
+.specialized-section{
+    background-color: rgb(20, 33, 61);
+    padding: 40px 0px;
+}
+
+
 .specialized {
     display: flex;
     flex-direction: column;
@@ -114,7 +138,7 @@ h1 {
 }
 
 .get-in-touch {
-    background-color: rgb(27, 27, 29);
+    background-color: rgb(229, 229, 229);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,10 +162,10 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: capitalize;
     font-weight: bold;
-    border: border-box 2px solid rgb(139, 136, 136);
     position: relative;
     border-radius: 44px;
     background-color: grey;
+    cursor: pointer;
     width: 120px;
     margin: auto;
     height: 30px;
@@ -328,13 +352,4 @@ h5 {
 
 .link-more {
     text-decoration: none;
-}
-@media (min-width: 576px){
-    h1{
-        font-size: 15px;
-    }
-    .my-picture{
-        width:30%;
-        height:30%;
-    }
 }
