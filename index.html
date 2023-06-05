@@ -12,14 +12,14 @@
 
 <body>
   <nav class="nav">
-    <p>my portofolio</p>
+    <p><a href="#">my portofolio</a></p>
     <ul>
       <li ><a href="#">Home</a></li>
       <li><a href="#projects">projects</a></li>
       <li><a href="#footer">contact</a></li>
       <li><a href="https://mega.nz/file/ffBl2LTB#jAq1EjP3ozdkJiISXSz5qk1jlJsJ6zIX62ogKC9juHU">resume</a></li>
-    </ul>
-  </nav>
+    </ul>     
+  </nav>    
   <main>
     <div>
       <div class="section-1">
@@ -73,7 +73,7 @@
         <button class="button">get in touch</button>
       </div> -->
       <!--         <hr /> -->
-        <div class="project-title">
+        <div class="project-title" id="projects">
           <div class="project-head">
             <h3>Projects</h3>
             <p class="react-note">
@@ -82,26 +82,34 @@
             </p>
           </div>
         </div>
-        <div class="projects">
-          <div class="react-container">
-              <img class="react-pic" src="img/react.jpg" alt="weather-app" />
-              <h4>React weather App</h4>
+        <div class="projects" >
+          <div class="project-container">
+              <img class="react-pic" width="400px" height="210px" src="img/react.jpg" alt="weather-app" />
+              <h5>React weather App</h5>
               <p>
                 Weather Webapp Using Reactjs And Weather API made using open
                 weatherAPI Allows you to make a search for the current weather
                 by simply typing cities and you get the weather results
               </p>
            </div>
-          <div class="java-container">
-            <img class="java-pic" src="img/java.png" alt="" />
+          <div class="project-container">
+            <img class="java-pic" width="400px" height="210px" src="img/java.png" alt="" />
                 <h5>javaGui</h5>
                 <p>
-                  using swing class a Graphical User Interface (GUI) toolkit that
-                  includes the GUI components. that provides a rich set of widgets
+                  using swing class a Graphical User Interface (GUI) toolkit which provides a rich set of widgets
                   and packages to make sophisticated GUI components for Java
                   applications . I created simple graphical user interface layout
                   and design of a GUI using textfield and button
                 </p>
+            </div>
+            <div class="project-container">
+              <img alt="larave image" width="400px" height="210px" src="img/laravel.png">
+              <h5>Laravel Blog Post</h5>
+              <p>
+                using PHP framework. I made 
+                A laravel blog post web application that has user authentication, and also involves CRUD operation.
+                User can write blogs and post them for all viewing from the people
+              </p>
             </div>
             </div>
         <div class="more">
@@ -120,40 +128,37 @@
         </div>
       </div>
   </main>
-  <footer>
-    <div id="footer" class="footer">
-      <div class="footer-container">
-        <div class="container-1">
-          <div class="footer-list">
-            <a href="#"><i class="fa-brands fa-facebook"></i> facebook</a>
-          </div>
-          <div class="footer-list">
-            <a href="#">
-              <i class="fa-brands fa-twitter"></i>
-              Twitter</a>
-          </div>
-        </div>
-        <div class="container-1">
-          <div class="footer-list">
-            <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-          </div>
-          <div class="footer-list">
-            <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-          </div>
-        </div>
-        <div class="container-1">
-          <div class="footer-list">
-            <a href="https://github.com/victoroki"><i class="fa-brands fa-github"></i> Github</a>
-          </div>
-          <div class="footer-list">
-            <a><i class="fa-solid fa-envelope"></i>
-              victormongare@petalmail.com</a>
-          </div>
-        </div>
-        <hr class="last-hr" />
-        <p>Victor Portofolio 2022 &copy; All rights reserved.</p>
-      </div>
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
     </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/victor.mongare.900">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Victor_tum_ke">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/victor-mongare-2b8270199/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/victorokis">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#projects">projects</a></li>
+      <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+
+    </ul>
+    <p>&copy;2023 victor mongare | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </footer>
 </body>
 

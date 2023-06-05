@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mirza:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 
 body {
     background-color: #080808;
@@ -13,9 +15,11 @@ body {
     padding: 0 30px;
 }
 
-.nav p {
+.nav p a {
     text-transform: uppercase;
     font-size: 20px;
+    color: white;
+    text-decoration: none;
     cursor: pointer;
 }
 .nav p :hover{
@@ -73,7 +77,7 @@ h1 span{
 .contact-me :hover{
     display: flex;
     font-weight: bold;
-    background-color: rgb(224, 30, 199);
+    background-color: darkorange;
     height:59px;
     width: 169px;
     border-radius: 20px;
@@ -219,64 +223,21 @@ h5 {
 }
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+    padding: 20px 0px;
 }
-
-.react-pic {
+.project-container{
     width: 100%;
-    height: 100%;
-    border-radius: 34px;
+    cursor: pointer;
 }
 
-.react-container {
-    box-shadow: 1px 1px 1px 1px rosybrown;
-    transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 67%;
-    border-radius: 31px;
-    padding: 45px;
-    margin: 55px;
-}
-
-.react-container p {
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    width: 50%px;
-}
-
-.java-pic {
-    width: 100%;
-    height: 100%;
-    border-radius: 34px;
-}
-
-.java-container {
-    box-shadow: 1px 1px 1px 1px rosybrown;
-    transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 67%;
-    border-radius: 31px;
-    padding: 45px;
-    margin: 55px;
-}
-
-.java-container p {
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    width: 50%px;
-}
 
 .quote {
     display: flex;
+    background-color: rgb(218, 215, 205);
     justify-content: space-around;
     margin: 0px;
     margin: 0px;
@@ -288,68 +249,140 @@ h5 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     font-size: 28px;
+    color: black;
     margin: 10%;
     letter-spacing: -0.3px;
 }
 
-.footer {
-    position: relative;
-    background-color: rgb(27, 27, 29);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
 
-}
-
-.container-1 {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    margin: 0px;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.last-hr {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    max-width: 100%;
-    width: 100%;
-    border: 1px solid grey;
-}
-
-.footer-list {
-    margin: 20px;
-}
-
-.footer-list a {
-    text-decoration: none;
-    color: aliceblue;
-    text-transform: lowercase;
-    font-size: 18px;
-    margin-left: 11px;
-}
-
-.more {
+.more p {
     text-decoration: none;
     font-family: josefin sans;
     font-size: 20px;
-    text-align: center;
     background-color: royalblue;
-    padding: 3px;
     border-radius: 30px;
-    width: 250px;
-    height: auto;
-    margin: auto;
+    width: 20%;
+    padding: 5px;
+    margin: 50px auto;
 }
 
 .link-more {
     text-decoration: none;
+}
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
 }
